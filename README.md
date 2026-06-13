@@ -186,16 +186,16 @@ Les fichiers volumineux sont **hébergés sur Google Drive** :
 ### 1. Dataset Principal
 | Fichier | Taille | Lien de téléchargement |
 |---------|--------|------------------------|
-| `algeria_solar_communes_REAL.parquet` | ~101 MB | **[⬇️ Télécharger le Dataset](https://drive.google.com/uc?id=1W5ak6G5Ve7w7db9DMmDlkw6NpAtJIEMR&export=download)** |
+| `algeria_solar_communes_REAL.parquet` | ~101 MB | **[⬇️ Télécharger le Dataset](https://drive.google.com/drive/u/0/folders/1W5ak6G5Ve7w7db9DMmDlkw6NpAtJIEMR)** |
 
 > Placez-le dans : `backend/data/algeria_solar_communes_REAL.parquet`
 
 ### 2. Modèles d'IA (.pkl)
 | Fichier | Taille | Dossier | Usage | Lien |
 |---------|--------|---------|-------|------|
-| `best_models_demand.pkl` | ~309 MB | `prevision/` | Prévision demande | **[⬇️ Télécharger](https://drive.google.com/uc?id=PASTE_ID_HERE&export=download)** |
-| `best_model_RandomForest.pkl` | ~XX MB | `prevision/` | Prévision GHI (production) | **[⬇️ Télécharger](https://drive.google.com/uc?id=PASTE_ID_HERE&export=download)** |
-| `model_Hybrid_Ridge_MLP.pkl` | ~XX MB | `comparaison_wilaya/` | Classement wilayas | **[⬇️ Télécharger](https://drive.google.com/uc?id=PASTE_ID_HERE&export=download)** |
+| `best_models_demand.pkl` | ~309 MB | `prevision/` | Prévision demande | **[⬇️ Télécharger](https://drive.google.com/drive/u/0/folders/1W5ak6G5Ve7w7db9DMmDlkw6NpAtJIEMR)** |
+| `best_model_RandomForest.pkl` | ~XX MB | `prevision/` | Prévision GHI (production) | **[⬇️ Télécharger](https://drive.google.com/drive/u/0/folders/1W5ak6G5Ve7w7db9DMmDlkw6NpAtJIEMR)** |
+| `model_Hybrid_Ridge_MLP.pkl` | ~XX MB | `comparaison_wilaya/` | Classement wilayas | **[⬇️ Télécharger](https://drive.google.com/drive/u/0/folders/1W5ak6G5Ve7w7db9DMmDlkw6NpAtJIEMR)** |
 
 > **Instructions** :
 > - Créez les dossiers `backend/ml/prevision/` et `backend/ml/comparaison_wilaya/`
