@@ -67,7 +67,7 @@
 | 6 | **Prévision** | Sélecteur de 9 modèles, 7 variables (GHI/DNI/DHI/T2M/WS10M/demande/Kt), horizons 24h → 30j |
 | 7 | **Comparaison modèles** | Leaderboard MAE/RMSE/MAPE/R², radar des top‑3 modèles |
 | 8 | **Conseiller équipement** | Recommandation panneaux/onduleurs/trackers/stockage, BOM exportable |
-| 9 | **Analyse ROI** | 5 KPI financiers, 3 scénarios, cashflow 25 ans, sensibilité au tarif |
+| 9 | **Analyse ROI** |  KPI financiers, 3 scénarios, cashflow 5 ans, sensibilité au tarif |
 | 10 | **Aide à la décision** | Verdict pleine page, plan d'action priorisé, navigation contextuelle |
 | 11 | **Centre offline** ⭐ | Packs wilaya téléchargeables, notes terrain géolocalisées, PWA |
 | 12 | **Rapports** | Investisseur / Gouvernement / EPC / Thèse — génération PDF |
