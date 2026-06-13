@@ -180,6 +180,8 @@ Scores pré-calculés dans `wilaya_ranking_final.csv` (split temporel strict 201
 
 ### 3. Score composite zones (déterministe)
 
+---
+
 ## 📊 Fichiers lourds (Dataset & Modèles)
 
 Les fichiers volumineux sont **hébergés sur Google Drive** :
@@ -209,7 +211,6 @@ score = 0.35·mean_GHI + 0.20·sunshine_hours + 0.15·peak_GHI
 
 Seuil heure ensoleillée : `GHI > 0.15 kWh/m²`.
 
----
 
 ---
 
