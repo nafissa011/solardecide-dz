@@ -179,6 +179,28 @@ Scores pré-calculés dans `wilaya_ranking_final.csv` (split temporel strict 201
 
 ### 3. Score composite zones (déterministe)
 
+## 📊 Fichiers lourds (Dataset & Modèles)
+
+Les fichiers volumineux sont **hébergés sur Google Drive** :
+
+### 1. Dataset Principal
+| Fichier | Taille | Lien de téléchargement |
+|---------|--------|------------------------|
+| `algeria_solar_communes_REAL.parquet` | ~101 MB | **[⬇️ Télécharger le Dataset](https://drive.google.com/uc?id=1W5ak6G5Ve7w7db9DMmDlkw6NpAtJIEMR&export=download)** |
+
+> Placez-le dans : `backend/data/algeria_solar_communes_REAL.parquet`
+
+### 2. Modèles d'IA (.pkl)
+| Fichier | Taille | Dossier | Usage | Lien |
+|---------|--------|---------|-------|------|
+| `best_models_demand.pkl` | ~309 MB | `prevision/` | Prévision demande | **[⬇️ Télécharger](https://drive.google.com/uc?id=PASTE_ID_HERE&export=download)** |
+| `best_model_RandomForest.pkl` | ~XX MB | `prevision/` | Prévision GHI (production) | **[⬇️ Télécharger](https://drive.google.com/uc?id=PASTE_ID_HERE&export=download)** |
+| `model_Hybrid_Ridge_MLP.pkl` | ~XX MB | `comparaison_wilaya/` | Classement wilayas | **[⬇️ Télécharger](https://drive.google.com/uc?id=PASTE_ID_HERE&export=download)** |
+
+> **Instructions** :
+> - Créez les dossiers `backend/ml/prevision/` et `backend/ml/comparaison_wilaya/`
+> - Placez les fichiers aux emplacements correspondants
+
 ```
 score = 0.35·mean_GHI + 0.20·sunshine_hours + 0.15·peak_GHI 
       + 0.15·clearness + 0.15·low_variability
