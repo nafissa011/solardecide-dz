@@ -626,11 +626,6 @@ git push origin feature/ma-fonctionnalite
 
 Merci de respecter le style existant (PEP-8 côté Python, ESLint vanilla côté JS) et d'ajouter une description claire du changement.
 
----
-
-## 📜 Licence
-
-Distribué sous licence **MIT** — voir `LICENSE` pour les détails.
 
 ---
 
