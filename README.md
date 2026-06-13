@@ -26,7 +26,7 @@
 2. [Fonctionnalités principales](#-fonctionnalités-principales)
 3. [Dataset](#-dataset--algeria_solar_communes_realparquet)
 4. [Modèles d'IA](#-modèles-dia)
-5. [Fichiers lourds](#-fichier-lourds)
+5. [Fichiers lourds (Dataset & Modèles)](#-fichiers-lourds-dataset--modèles)
 6. [Architecture technique](#-architecture-technique)
 7. [Stack technologique](#-stack-technologique)
 8. [Installation & démarrage](#-installation--démarrage)
@@ -204,6 +204,8 @@ Les fichiers volumineux sont **hébergés sur Google Drive** :
 > - Créez les dossiers `backend/ml/prevision/` et `backend/ml/comparaison_wilaya/`
 > - Placez les fichiers aux emplacements correspondants
 
+---
+
 ```
 score = 0.35·mean_GHI + 0.20·sunshine_hours + 0.15·peak_GHI 
       + 0.15·clearness + 0.15·low_variability
@@ -211,7 +213,7 @@ score = 0.35·mean_GHI + 0.20·sunshine_hours + 0.15·peak_GHI
 
 Seuil heure ensoleillée : `GHI > 0.15 kWh/m²`.
 
----
+
 ---
 
 ## 🏗️ Architecture technique
