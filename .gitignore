@@ -1,0 +1,33 @@
+# Environments
+venv/
+env/
+.venv/
+ENV/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# ML models (use LFS instead)
+*.pkl
+*.pickle
+*.h5
+*.onnx
+*.pt
+*.pth
+
+# Data
+*.csv
+*.xlsx
+*.zip
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+
+# Others
+*.log
+.DS_Store

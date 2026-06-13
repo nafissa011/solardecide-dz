@@ -1,0 +1,1 @@
+"""SolarDZ — Routes Flask."""

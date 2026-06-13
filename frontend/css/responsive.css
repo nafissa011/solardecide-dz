@@ -1,0 +1,159 @@
+/* Responsive Design System */
+
+/* Tablet and smaller desktops (≤1024px) */
+@media (max-width: 1024px) {
+  .grid-7-5, .grid-5-7 { grid-template-columns: 1fr; }
+  .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .quick-search-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .quick-search-grid > *:last-child {
+    grid-column: 1 / -1;
+  }
+  .hero { padding: 60px 24px 80px; }
+  .landing-section { padding: 48px 20px; }
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .data-table { font-size: 12px; }
+  .data-table th, .data-table td { padding: 8px 6px; }
+  /* Phase 1: cap drawer at 80vw on tablets. */
+  #sidebar { width: 80vw; max-width: 80vw; }
+  .page-wrapper { padding: 16px; }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .quick-search-grid { grid-template-columns: 1fr !important; }
+  .kpi-grid { grid-template-columns: 1fr; }
+  .hero { padding: 40px 16px 60px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 24px; }
+  .landing-section { padding: 24px 16px; }
+  .card { border-radius: var(--radius-md); }
+  .card-header { flex-direction: column; align-items: flex-start; }
+  .card-title { margin-bottom: 8px; }
+  /* Phase 1: cap drawer at 80vw on mobile too — never full width. */
+  #sidebar { width: 80vw; max-width: 80vw; }
+  #main-area { margin-left: 0; }
+  .page-wrapper { padding: 12px; }
+  .data-table { font-size: 11px; }
+  .data-table th, .data-table td { padding: 6px 4px; }
+  .scroll-x { overflow-x: auto; }
+  .model-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Leaflet fix for dark theme */
+.leaflet-tile { filter: brightness(0.65) saturate(0.5) contrast(1.1); }
+
+/* Chart tooltip override */
+.chartjs-tooltip { z-index: 999 !important; }
+
+/* Smooth page transitions */
+#page-content > * { animation: fadeInUp 0.3s ease; }
+
+/* Focus styles */
+.form-input:focus, .form-select:focus, button:focus-visible {
+  outline: 2px solid var(--amber-500);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  #sidebar, #topbar { display: none !important; }
+  #main-area { margin-left: 0 !important; }
+  .card { break-inside: avoid; }
+  body { background: white; color: black; }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --border-color: rgba(255,255,255,0.2);
+    --text-secondary: #d1d5db;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Extra small screens (≤360px) */
+@media (max-width: 360px) {
+  .hero h1 { font-size: 20px; line-height: 1.2; }
+  .hero-stats { grid-template-columns: 1fr; gap: 8px; }
+  .quick-search-grid { gap: 8px; }
+  .page-wrapper { padding: 8px; }
+  .card { border-radius: 8px; }
+  .kpi-grid { gap: 8px; }
+}
+
+/* User cards responsive */
+@media (max-width: 768px) {
+  .user-cards { grid-template-columns: 2fr; }
+}
+
+@media (max-width: 480px) {
+  .user-cards { grid-template-columns: 1fr; }
+}
+
+/* Model grid responsive */
+@media (max-width: 1024px) {
+  .model-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .model-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .model-grid { grid-template-columns: 1fr; }
+}
+
+/* Feature grid responsive */
+@media (max-width: 1024px) {
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Card header responsive on small screens */
+@media (max-width: 768px) {
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .card-title {
+    margin-bottom: 0;
+  }
+}
+
+/* Touch-friendly button sizing */
+@media (hover: none) and (pointer: coarse) {
+  button, a.btn, .clickable {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 16px;
+  }
+}
+
+/* Dark mode optimizations */
+@media (prefers-color-scheme: dark) {
+  .leaflet-tile { filter: brightness(0.60) saturate(0.4) contrast(1.2); }
+}
+
+/* Print optimizations */
+@media print {
+  .model-card { break-inside: avoid; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .no-print { display: none !important; }
+}

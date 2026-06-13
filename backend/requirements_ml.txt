@@ -1,0 +1,16 @@
+# SolarDecide DZ — dépendances ML lourdes (modèle prévision)
+# Installer APRÈS requirements.txt :
+#   pip install -r requirements_ml.txt
+#
+# Sans ces packages, le backend démarre normalement en mode dégradé :
+#   - le blueprint forecast_ml est ignoré silencieusement
+#   - tous les autres endpoints (dataset, comparaison, ROI, rapports) restent 100 % fonctionnels
+ 
+# ── Deep learning — modèle Hybride N-HiTS + LSTM ────────────────
+torch>=2.0                     # CPU suffit ; pour GPU : pip install torch --index-url https://download.pytorch.org/whl/cu121
+ 
+# ── Déjà dans requirements.txt, rappelé ici pour clarté ─────────
+joblib>=1.3
+numpy>=1.24
+pandas>=2.0
+pyarrow>=14.0
